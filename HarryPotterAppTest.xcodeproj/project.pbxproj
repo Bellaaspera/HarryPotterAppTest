@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		7006653829EDE0A000305FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006653729EDE0A000305FE6 /* AppDelegate.swift */; };
 		7006653A29EDE0A000305FE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006653929EDE0A000305FE6 /* SceneDelegate.swift */; };
-		7006653C29EDE0A000305FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006653B29EDE0A000305FE6 /* ViewController.swift */; };
 		7006653F29EDE0A000305FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7006653D29EDE0A000305FE6 /* Main.storyboard */; };
 		7006654129EDE0A100305FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7006654029EDE0A100305FE6 /* Assets.xcassets */; };
 		7006654429EDE0A100305FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7006654229EDE0A100305FE6 /* LaunchScreen.storyboard */; };
+		7006654D29EDE11400305FE6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006654C29EDE11400305FE6 /* CollectionViewController.swift */; };
+		7006655329EDE1E900305FE6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006655229EDE1E900305FE6 /* NetworkManager.swift */; };
+		7006655629EDE20D00305FE6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006655529EDE20D00305FE6 /* Character.swift */; };
+		7006655929EE881400305FE6 /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006655829EE881400305FE6 /* CharCollectionViewCell.swift */; };
+		7006655B29EEB01300305FE6 /* DetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006655A29EEB01300305FE6 /* DetailesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7006653429EDE0A000305FE6 /* StarWarsAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7006653429EDE0A000305FE6 /* HarryPotterAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7006653729EDE0A000305FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7006653929EDE0A000305FE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7006653B29EDE0A000305FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7006653E29EDE0A000305FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7006654029EDE0A100305FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7006654329EDE0A100305FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7006654529EDE0A100305FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7006654C29EDE11400305FE6 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7006655229EDE1E900305FE6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7006655529EDE20D00305FE6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7006655829EE881400305FE6 /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharCollectionViewCell.swift; path = ../../../../../CharCollectionViewCell.swift; sourceTree = "<group>"; };
+		7006655A29EEB01300305FE6 /* DetailesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,7 @@
 		7006652B29EDE0A000305FE6 = {
 			isa = PBXGroup;
 			children = (
-				7006653629EDE0A000305FE6 /* StarWarsAppTest */,
+				7006653629EDE0A000305FE6 /* HarryPotterAppTest */,
 				7006653529EDE0A000305FE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +56,91 @@
 		7006653529EDE0A000305FE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7006653429EDE0A000305FE6 /* StarWarsAppTest.app */,
+				7006653429EDE0A000305FE6 /* HarryPotterAppTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7006653629EDE0A000305FE6 /* StarWarsAppTest */ = {
+		7006653629EDE0A000305FE6 /* HarryPotterAppTest */ = {
+			isa = PBXGroup;
+			children = (
+				7006655729EE87F100305FE6 /* Views */,
+				7006655429EDE1FF00305FE6 /* Models */,
+				7006655129EDE1D700305FE6 /* NetworkManager */,
+				7006654E29EDE15000305FE6 /* App */,
+				7006654B29EDE10000305FE6 /* ViewControllers */,
+				7006654F29EDE16900305FE6 /* Storyboards */,
+				7006655029EDE17700305FE6 /* Resources */,
+			);
+			path = HarryPotterAppTest;
+			sourceTree = "<group>";
+		};
+		7006654B29EDE10000305FE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7006654C29EDE11400305FE6 /* CollectionViewController.swift */,
+				7006655A29EEB01300305FE6 /* DetailesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7006654E29EDE15000305FE6 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				7006653729EDE0A000305FE6 /* AppDelegate.swift */,
 				7006653929EDE0A000305FE6 /* SceneDelegate.swift */,
-				7006653B29EDE0A000305FE6 /* ViewController.swift */,
-				7006653D29EDE0A000305FE6 /* Main.storyboard */,
-				7006654029EDE0A100305FE6 /* Assets.xcassets */,
-				7006654229EDE0A100305FE6 /* LaunchScreen.storyboard */,
 				7006654529EDE0A100305FE6 /* Info.plist */,
 			);
-			path = StarWarsAppTest;
+			path = App;
+			sourceTree = "<group>";
+		};
+		7006654F29EDE16900305FE6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7006653D29EDE0A000305FE6 /* Main.storyboard */,
+				7006654229EDE0A100305FE6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7006655029EDE17700305FE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7006654029EDE0A100305FE6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7006655129EDE1D700305FE6 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				7006655229EDE1E900305FE6 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		7006655429EDE1FF00305FE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7006655529EDE20D00305FE6 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7006655729EE87F100305FE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7006655829EE881400305FE6 /* CharCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7006653329EDE0A000305FE6 /* StarWarsAppTest */ = {
+		7006653329EDE0A000305FE6 /* HarryPotterAppTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7006654829EDE0A100305FE6 /* Build configuration list for PBXNativeTarget "StarWarsAppTest" */;
+			buildConfigurationList = 7006654829EDE0A100305FE6 /* Build configuration list for PBXNativeTarget "HarryPotterAppTest" */;
 			buildPhases = (
 				7006653029EDE0A000305FE6 /* Sources */,
 				7006653129EDE0A000305FE6 /* Frameworks */,
@@ -82,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = StarWarsAppTest;
+			name = HarryPotterAppTest;
 			productName = StarWarsAppTest;
-			productReference = 7006653429EDE0A000305FE6 /* StarWarsAppTest.app */;
+			productReference = 7006653429EDE0A000305FE6 /* HarryPotterAppTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7006652F29EDE0A000305FE6 /* Build configuration list for PBXProject "StarWarsAppTest" */;
+			buildConfigurationList = 7006652F29EDE0A000305FE6 /* Build configuration list for PBXProject "HarryPotterAppTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7006653329EDE0A000305FE6 /* StarWarsAppTest */,
+				7006653329EDE0A000305FE6 /* HarryPotterAppTest */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7006653C29EDE0A000305FE6 /* ViewController.swift in Sources */,
+				7006655329EDE1E900305FE6 /* NetworkManager.swift in Sources */,
+				7006655629EDE20D00305FE6 /* Character.swift in Sources */,
+				7006654D29EDE11400305FE6 /* CollectionViewController.swift in Sources */,
 				7006653829EDE0A000305FE6 /* AppDelegate.swift in Sources */,
+				7006655929EE881400305FE6 /* CharCollectionViewCell.swift in Sources */,
 				7006653A29EDE0A000305FE6 /* SceneDelegate.swift in Sources */,
+				7006655B29EEB01300305FE6 /* DetailesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLWS5J8QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StarWarsAppTest/Info.plist;
+				INFOPLIST_FILE = StarWarsAppTest/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLWS5J8QR3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StarWarsAppTest/Info.plist;
+				INFOPLIST_FILE = StarWarsAppTest/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +411,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7006652F29EDE0A000305FE6 /* Build configuration list for PBXProject "StarWarsAppTest" */ = {
+		7006652F29EDE0A000305FE6 /* Build configuration list for PBXProject "HarryPotterAppTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7006654629EDE0A100305FE6 /* Debug */,
@@ -348,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7006654829EDE0A100305FE6 /* Build configuration list for PBXNativeTarget "StarWarsAppTest" */ = {
+		7006654829EDE0A100305FE6 /* Build configuration list for PBXNativeTarget "HarryPotterAppTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7006654929EDE0A100305FE6 /* Debug */,
